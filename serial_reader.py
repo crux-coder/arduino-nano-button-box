@@ -1,12 +1,8 @@
 import serial
 import pyvjoy
-import time
-from pynput.keyboard import Key, Controller
 # Enter Your Arduino Port Number
 ser = serial.Serial('COM10', 9600)
-keyboard = Controller()
 j = pyvjoy.VJoyDevice(1)
-time_delay = 0.05
 last_pressed_key = 0
 # L B N A O F G P H K J
 while True:
